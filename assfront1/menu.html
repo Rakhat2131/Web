@@ -1,0 +1,275 @@
+<style> 
+/* Reset some default styles */ 
+body, h1, h2, p { 
+    margin: 0; 
+    padding: 0; 
+} 
+
+hr{
+    margin-bottom: 50px;
+}
+/* Apply styles to the header */ 
+header { 
+    background-color: #333; /* Set your header background color */ 
+    color: #fff; /* Set text color for the header */ 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+} 
+ 
+.logo img { 
+    max-width: 100px; /* Adjust the size of your logo */ 
+} 
+ 
+nav ul { 
+    list-style-type: none; 
+    display: flex; 
+} 
+ 
+nav ul li { 
+    margin-right: 20px; 
+} 
+ 
+nav ul li a { 
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold; 
+} 
+ 
+/* Apply styles to the menu section */ 
+.menu { 
+    padding: 20px; 
+    text-align: center; 
+} 
+ 
+.menu h1 { 
+    font-size: 32px; 
+    margin-bottom: 20px; 
+} 
+ 
+.menu-item { 
+    margin: 20px; 
+    display: inline-block; 
+    vertical-align: top; 
+} 
+ 
+.menu-item img { 
+    max-width: 100%; 
+    border-radius: 10px; /* Add rounded corners to images */ 
+} 
+ 
+.menu-item h2 { 
+    margin-top: 10px; 
+} 
+ 
+.menu-item p.price { 
+    font-weight: bold; 
+    color: #d53e31; /* Set your price color */ 
+} 
+</style> 
+ 
+ 
+ 
+ 
+<html> 
+<head> 
+    <title>Dall'Ansar | Menu</title> 
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head> 
+<body> 
+    <!-- Header Section --> 
+    <header> 
+        <div class="logo"> 
+            <img src="logo.png" alt="Dall'Ansar Logo"> 
+        </div> 
+        <nav> 
+            <ul> 
+                <li><a href="menu.html">Menu</a></li> 
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+ 
+    <!-- Menu Section --> 
+    <section class="menu"> 
+        <h1 style="margin-bottom: 50px;">Our Menu</h1> 
+
+        <h2>SALADS</h2>
+        <hr style="margin-bottom: 0px;">
+        
+        <div class="menu-item"> 
+            <img src="auberginesalad.png" alt="Dish 1"> 
+            <h2>Ansar's Salad With Warm Aubergines</h2> 
+            <p>crispy breaded aubergine salad with garlic, 
+                cucumbers, tomatoes, peanuts, cilantro and fried onions</p> 
+            <p class="price">4990₸</p> 
+        </div> 
+        
+        <div class="menu-item"> 
+            <img src="prawnssalad.png" alt="Dish 1"> 
+            <h2>Ansar's Prawn and Pineapple Salad</h2> 
+            <p>light salad of tiger shrimps, spinach, cucumbers, 
+                canned pineapple and roasted peanuts with signature dressing</p> 
+            <p class="price">5990₸</p> 
+        </div> 
+
+        <div class="menu-item"> 
+            <img src="greensalad.webp" alt="Dish 1"> 
+            <h2>Ansar's Green Saslad Bowl</h2>
+            <p>salad mix, cucumbers, broccoli, apples, 
+                avocado, edamame beans, citrus dressing with wasabi</p> 
+            <p class="price">5990₸</p> 
+        </div> 
+        <table>
+            <tr>
+                <th>Nutrition</th>
+                <th>Amount per serving</th>
+            </tr>
+            <tr>
+                <td>Calories</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td>5g</td>
+            </tr>
+            <tr>
+                <td>Protein</td>
+                <td>3g</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h2>PIZZA</h2>
+        <hr style="margin-bottom: 0px;">
+        
+        <div class="menu-item"> 
+            <img src="chickenpizza.jpg" alt="Dish 1"> 
+            <h2>Ansar's Chicken Pizza</h2> 
+            <p>pizza with chicken, bell peppers and tomatoes, 
+                soy sprouts and cilantro on thin crust</p> 
+            <p class="price">6000₸</p> 
+        </div> 
+
+        <div class="menu-item"> 
+            <img src="pepperonipizza.jpg" alt="Dish 1"> 
+            <h2>Ansar's Pepperoni Pizza</h2> 
+            <p>classic thin crust pizza with salami</p> 
+            <p class="price">6300₸</p> 
+        </div> 
+
+        <div class="menu-item"> 
+            <img src="margaritapizza.jpg" alt="Dish 1"> 
+            <h2>Ansar's Margarita Pizza</h2> 
+            <p>classic Margherita pizza with tomatoes on thin crust</p> 
+            <p class="price">5500₸</p> 
+        </div> 
+
+        <table>
+            <tr>
+                <th>Nutrition</th>
+                <th>Amount per serving</th>
+            </tr>
+            <tr>
+                <td>Calories</td>
+                <td>240</td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td>12g</td>
+            </tr>
+            <tr>
+                <td>Protein</td>
+                <td>6g</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>POKE BOWLS</h2>
+        <hr style="margin-bottom: 0px;">
+        
+        <div class="menu-item"> 
+            <img src="prawnpoke.png" alt="Dish 1"> 
+            <h2>Ansar's Prawn Poke</h2> 
+            <p>served with special rice, shrimp, 
+                avocado, tomatoes, tofu cheese and special sauce</p> 
+            <p class="price">6990₸</p> 
+        </div> 
+
+        <div class="menu-item"> 
+            <img src="edamamepoke.png" alt="Dish 1"> 
+            <h2>Ansar's Edamame Poke</h2>
+            <p>served with special rice, marinated salmon, edamame beans, 
+                mango, avocado, kimchi, chukka salad and signature sauce</p> 
+            <p class="price">6990₸</p> 
+        </div> 
+
+        <table>
+            <tr>
+                <th>Nutrition</th>
+                <th>Amount per serving</th>
+            </tr>
+            <tr>
+                <td>Calories</td>
+                <td>240</td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td>12g</td>
+            </tr>
+            <tr>
+                <td>Protein</td>
+                <td>6g</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>BEVERAGES</h2>
+        <hr style="margin-bottom: 0px;">
+        
+        <div class="menu-item"> 
+            <img src="coffee.jpg" alt="Dish 1"> 
+            <h2>Ansar's Coffee</h2> 
+            <p class="price">1600₸</p> 
+        </div> 
+
+        <div class="menu-item"> 
+            <img src="7up.jpeg" alt="Dish 1"> 
+            <h2>7UP 1 L</h2> 
+            <p class="price">1000₸</p> 
+        </div> 
+
+        <div class="menu-item"> 
+            <img src="mirinda.jpeg" alt="Dish 1"> 
+            <h2>MIRINDA 1 L</h2> 
+            <p class="price">1000₸</p> 
+        </div> 
+
+        <div class="menu-item"> 
+            <img src="lemonade.jpeg" alt="Dish 1"> 
+            <h2>Ansar's Homemade Lemonade 0.5 L</h2> 
+            <p class="price">Free</p> 
+        </div> 
+
+        <div class="menu-item"> 
+            <img src="strawberrylemonade.jpg" alt="Dish 1"> 
+            <h2>Ansar's Homemade Strawberry Lemonade 0.5 L</h2>
+            <p class="price">Free</p> 
+        </div> 
+        <hr>
+
+    </section> 
+ 
+    <!-- Add more sections as needed --> 
+ 
+    <!-- Footer Section --> 
+    <footer> 
+        <p>&copy; &reg; Dall'Ansar Restaurant</p> 
+    </footer> 
+</body> 
+</html>
