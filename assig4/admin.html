@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+hey hey
+<h1 id="fname"></h1>
+<h2 id="lname"></h2>
+<h2 id="email"></h2>
+
+<form>
+    <label>
+        <input type="text" placeholder="name"/>
+    </label>
+    <label>
+        <input type="number" placeholder="price"/>
+    </label>
+
+    <button>Add</button>
+</form>
+<div id="items" class="items">
+
+</div>
+
+
+<script>
+    const fname = document.getElementById("fname");
+    const lname = document.getElementById("lname");
+    const email = document.getElementById("email");
+
+    if (localStorage.getItem("fname") === "Rakhat") {
+        fname.innerHTML = localStorage.getItem("fname");
+    }
+
+    fname.innerHTML = localStorage.getItem("fname");
+    lname.innerHTML = localStorage.getItem("lname");
+    email.innerHTML = localStorage.getItem("email");
+
+    // // // // // // //
+
+    const items = document.getElementById("items");
+    localStorage.setItem("basket", JSON.stringify([
+        {name: "карандаш", price: 100},
+        {name: "ручка", price: 200},
+        {name: "сок", price: 320},
+    ]));
+
+    const basketItems = JSON.parse(localStorage.getItem("basket"));
+    renderItems();
+
+    function deleteItem(index) {
+        basketItems.splice(index, 1);
+        localStorage.setItem("basket", JSON.stringify(basketItems));
+        renderItems();
+    }
+
+    function renderItems() {
+        items.innerHTML = "";
+        basketItems.forEach((basketItem) => {
+            const item = document.createElement("div");
+            item.innerHTML = `
+            <h3>${basketItem.name}</h3>
+            <p>${basketItem.price}</p>
+            <button onclick="deleteItem(${basketItems.indexOf(basketItem)})">Delete</button>
+        `;
+            items.appendChild(item);
+        });
+    }
+
+    // // // // // //
+
+    const
+</script>
+</body>
+</html>
